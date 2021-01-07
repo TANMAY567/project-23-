@@ -64,11 +64,7 @@ function setup() {
 
 	Engine.run(engine);
 
-	if(keyCode===LEFT_ARROW)
-	{
-		helicopterSprite.x= helicopterSprite.position.x - 10;
-		packageSprite.x= packageSprite.position.x - 10;
-	}
+	
   
 }
 
@@ -76,6 +72,12 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
+
+  if(keyCode===LEFT_ARROW)
+	{
+		helicopterSprite.x= helicopterSprite.position.x - 10;
+		packageSprite.x= packageSprite.position.x - 10;
+	}
   
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
